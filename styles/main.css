@@ -1,0 +1,135 @@
+.background-bottom {
+    width: 60%;
+    height: 50%;
+    background-image: url(/images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: -20px;
+    right: -160px;
+    
+}
+
+.background-top {
+    width: 60%;
+    height: 100%;
+    background-image: url(/images/bg-pattern-top.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: -40%;
+    left: -80px;
+    transform: rotate(-5deg);
+}
+
+/*    mobile    */
+@media screen and (min-width: 375px) and (max-width: 740px) {
+    .background-bottom {
+        height: 70%;
+        bottom: -105px;
+        right: 0;
+
+    }
+
+    .background-top {
+        width: 100%;
+        top: -25%;
+        left: -160px;
+        transform: rotate(-15deg);
+    }
+}
+
+.container {
+    width: 400px;
+    height: 430px;
+    background-color: #fff;
+    border-radius: 15px;
+    z-index: 1;
+}
+
+.profile {
+    display: grid;
+    grid-template-rows: 150px 170px 110px;
+}
+
+/*    mobile    */
+@media screen and (min-width: 375px) and (max-width: 740px) {
+    body {
+        align-items: unset;
+    }
+
+    .container {
+        width: 335px;
+        margin: 150px 0 200px;
+    }
+}
+
+.cover-photo {
+    background-image: url(/images/bg-pattern-card.svg);
+    border-radius: 15px 15px 0 0;
+}
+
+.info {
+    text-align: center;
+    position : relative;
+    border-bottom: 1px solid hsl(0, 1%, 75%);
+}
+
+.wrapper__avatar {
+    width: 106px;
+    height: 106px;
+    padding: 5px;
+    position: absolute;
+    top: -64%;
+    left: 50%;
+    transform: translateX(-50%) translateY(50%);
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.info__avatar {
+    border-radius: 50%;
+}
+
+.name {
+    margin-top: 80px;
+    color: var(--very-dark-desaturated-blue-clr);
+    margin-right: 5px;
+    display: inline-block;
+}
+
+.age {
+    display: inline-block;
+    color: var(--dark-gray-primary-clr);
+}
+
+.country {
+    color: var(--dark-gray-primary-clr);
+    font-weight: 300;
+    font-size: 15px;
+    margin: -12px;
+}
+
+.other-info {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+span {
+    display: block;
+}
+
+.interact-or-photos {
+    text-align: center;
+}
+
+.amount {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.category {
+    font-size: 12px;
+    color: var(--dark-gray-primary-clr);
+    margin-top: 5px;
+}

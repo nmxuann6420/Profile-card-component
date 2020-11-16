@@ -1,0 +1,28 @@
+:root {
+    --dark-cyan-clr: hsl(185, 75%, 39%);
+    --very-dark-desaturated-blue-clr: hsl(229, 23%, 23%);
+    --dark-grayish-blue-clr: hsl(227, 10%, 46%);
+    --dark-gray-primary-clr: hsl(0, 0%, 59%);
+}
+
+* {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 18px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: var(--dark-cyan-clr);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}

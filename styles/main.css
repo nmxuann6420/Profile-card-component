@@ -24,17 +24,19 @@
 /*    mobile    */
 @media screen and (min-width: 375px) and (max-width: 740px) {
     .background-bottom {
-        height: 70%;
-        bottom: -105px;
-        right: 0;
-
+        width: 100%;
+        height: 100%;
+        bottom: -46%;
+        right: -40%;
     }
 
     .background-top {
         width: 100%;
-        top: -25%;
-        left: -160px;
-        transform: rotate(-15deg);
+        height: 100%;
+        top: -50%;
+        left: -40%;
+        background-size: unset;
+        transform: rotate(180deg);
     }
 }
 
@@ -53,8 +55,10 @@
 
 /*    mobile    */
 @media screen and (min-width: 375px) and (max-width: 740px) {
-    body {
+    body, html {
         align-items: unset;
+        overflow-x: hidden;
+        /* overflow-y: auto; */
     }
 
     .container {
@@ -71,7 +75,7 @@
 .info {
     text-align: center;
     position : relative;
-    border-bottom: 1px solid hsl(0, 1%, 75%);
+    border-bottom: 1px solid hsl(0, 4%, 90%);
 }
 
 .wrapper__avatar {
